@@ -48,8 +48,4 @@ public class StudentServiceImpl implements StudentService {
         Student student = findStudentById(studentId);
         studentRepository.deleteById(student.getId());
     }
-
-    public static String testStaticMethod(String message) {
-        return "Welcome " + message;
-    }
 }

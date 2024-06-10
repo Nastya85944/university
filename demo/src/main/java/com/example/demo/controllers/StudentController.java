@@ -17,7 +17,7 @@ public class StudentController {
     }
 
     @GetMapping("/students/{id}")
-    public Student findStudentById(@PathVariable("id") int studentId) throws ResourceNotFoundException {
+    public Student findStudentById(@PathVariable("id") int studentId){
         return studentService.findStudentById(studentId);
     }
 
@@ -27,12 +27,12 @@ public class StudentController {
     }
 
     @PutMapping("/students/{id}")
-    public Student updateStudent(@RequestBody Student student, @PathVariable("id") int studentId) throws ResourceNotFoundException {
+    public Student updateStudent(@RequestBody Student student, @PathVariable("id") int studentId) {
         return studentService.updateStudent(student, studentId);
     }
 
     @DeleteMapping("/students/{id}")
-    public void deleteStudent(@PathVariable("id") int studentId) throws ResourceNotFoundException {
+    public void deleteStudent(@PathVariable("id") int studentId){
         studentService.deleteStudent(studentId);
     }
 

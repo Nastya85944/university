@@ -16,4 +16,6 @@ INSERT INTO course (course_name, description, price) VALUES ('Physics 101', 'Fun
 INSERT INTO course (course_name, description, price) VALUES ('Chemistry 101', 'Basic Concepts of Chemistry', 280);
 INSERT INTO course (course_name, description, price) VALUES ('Biology 101', 'Introduction to Biology', 260);
 
+INSERT INTO users (user_name, password, created_at, updated_at) VALUES ('user', '$2a$12$1bJIRP6HeowNYU4ow2kNAOKqj4UwPj7Ve2XqafGgJpWflKhpR5bNe', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO users (user_name, password, created_at, updated_at) VALUES ('admin', '$2a$12$DinEiZ26Hs7i9l/n0CW3Eucq6e2U/7Z5KqiZqRmb7HJboy5lIkVo.', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
